@@ -46,7 +46,7 @@ function resta(x, y) {
   // Resta "y" de "x" y devuelve el valor
   // Tu código:
 
-  return y - x;
+  return x - y;
   
 }
 
@@ -231,7 +231,7 @@ function combinarNombres(nombre, apellido) {
   // Ejemplo: "Soy", "Henry" -> "Soy Henry"
   // Tu código: 
 
-  return nombre + "" + apellido;
+  return nombre + " " + apellido;
   
 }
 
@@ -290,7 +290,9 @@ function esVocal(letra){
 
   if(letra == "A","E","I","O","U"){
     return "Es vocal";
-  }else{
+  }else if(letra.length > 1){
+    return "Dato incorrecto";
+  }else if(letra != "A","E","I","O","U"){
     return "Dato incorrecto";
   }
   
